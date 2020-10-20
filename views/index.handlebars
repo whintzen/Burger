@@ -1,0 +1,87 @@
+
+
+<div class="container-fluid">  
+    <center>
+      <div class="row">
+        {{!-- <img class="center" src="assets/images/burger.png" alt="Burger Img"> --}}
+        <img class="center" src="assets/images/sliders.jpg" alt="Burger Img">
+        <div class="jumbotron">
+          <h1>Eat Da Burger!</h1>      
+          <p>Choose a Burger from the list. Then devour it. <br> 
+          Don't see a burger you like? Enter a Burger of your choice to the list using the submit form below. The list on the left keeps track of what you devoured.</p> 
+        </div>
+      </div>
+    </center>
+
+
+    <div class="row">
+      <center>
+        <!-- Left side (Burgers Available) -->
+        <div class="col-md-4">
+          <h3 class="submitFont">Hamburgers Available</h3>
+          <div id="burgersAvailable">
+
+            <!-- Dynamically Add User Burgers Here -->
+            {{#each hamburgers}}
+              {{#unless devoured}}
+              {{!-- <form action="hamburger/eat/{{id}}" method="POST"> --}}
+              <form action="hamburger/updateOne/{{id}}" method="POST"></form>
+                <div class="input-group">
+                  <li class="form-control">{{id}}. {{burger_name}}</li>
+                    <span class="input-group-btn">
+                      <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+                    </span>
+                </div>
+              </form>
+              {{/unless}}
+            {{/each}}
+
+          </div>
+        </div>
+
+        <div class="col-md-4"></div> 
+
+        <!-- Right side (Burgers Devoured) -->
+        <div class="col-md-4">
+          <h3 class="submitFont">Burgers Devoured</h3>
+          <div id="alreadyEaten">
+
+            <!-- Dynamically Insert Devoured Burgers Here -->
+            {{#each hamburgers}}
+              {{#if this.devoured}}
+                <div class="input-group">
+                  <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
+                </div>
+              {{/if}}
+            {{/each}}
+
+          </div>
+        </div>
+      </center>
+    </div>
+{{!-- </div> --}}
+<!-- Input New Burgers Form -->
+      {{!-- <form action="hamburger/create" method="POST"> --}}
+      <form action="hamburger/insertOne" method="POST">  
+        
+        <!-- Text Area Input -->
+        <div class="row">
+          <!-- Empty Div to help center textarea -->
+          <div class="col-md-3"></div> 
+
+          <!-- Burger Input Box -->
+          <div class="form-group col-md-6">
+            <center><label for="new_burger" class="submitFont">Request a new burger!</label></center>
+            <textarea class="form-control" type="text" columns="6" rows="2" id="new_burger required" value="" name="burger_name"></textarea>
+          </div>
+         
+          <div class="col-md-3"></div> 
+        </div>
+      
+        <!-- Submit Button -->
+        <center>
+          <button id="submit-button" type="submit" class="btn btn-danger">Make my Burger!</button>
+        </center>
+      </form>
+      <br>
+</div>
