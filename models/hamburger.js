@@ -7,23 +7,31 @@ var hamburger =
 
   selectAll: function(callback)
   {
-    orm.selectAll(function(res)
+    orm.selectAll("hamburgers",function(res)
     {
       callback(res);
     });
   },
 
-  insertOne: function(burger_name, callback)
+  insertOne: function(cols, vals, callback)
   {
-    orm.insertOne(burger_name, function(res)
+    orm.insertOne("hamburgers", cols, vals, function(res)
     {
       callback(res);
     });
   },
 
-  updateOne: function(burger_id, callback)
+  updateOne: function(objColVals, condition, callback)
   {
-    orm.updateOne(burger_id, function(res)
+    orm.updateOne("hamburgers", objColVals, condition, function(res)
+    {
+      callback(res);
+    });
+  },
+
+  deleteOne: function(condition, callback)
+  {
+    orm.deleteOne("hamburgers", condition, function(res)
     {
       callback(res);
     });
