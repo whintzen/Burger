@@ -27,15 +27,7 @@ var hamburger =
     {
       callback(res);
     });
-  },
-
-  deleteOne: function(condition, callback)
-  {
-    orm.deleteOne("hamburgers", condition, function(res)
-    {
-      callback(res);
-    });
-  }
+  }  
 
 };
 

@@ -86,21 +86,8 @@ var orm =
             }
 			callback(result);
 		});
-    },
+    }    
     
-    // deleteOne from the Hamburgers table
-    // 'DELETE FROM hamburgers WHERE ?' 
-   deleteOne: function(table, condition, callback) {
-        var dbQuery = "DELETE FROM " + table + " WHERE " +  condition;
-       
-        console.log(dbQuery);
-        connection.query(dbQuery, function(err, result) {
-            if (err) {
-                throw err;
-            }
-            callback(result);
-        });
-    }
 };
 
 

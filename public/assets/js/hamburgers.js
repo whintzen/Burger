@@ -1,3 +1,4 @@
+// The information in this file is used in the index.html file
 $(function() {
     $(".create-form").on("submit", function(event) {
         // Make sure to preventDefault on a submit event.
@@ -38,18 +39,6 @@ $(function() {
           // Reload the page to get the updated list
           location.reload();
         });
-    });
-     
-    //Delete the hamburger
-    $(".delete-hamburger").on("click", function(event) {
-        event.preventDefault();
-
-        var id = $(this).data("id");
-  
-      // Send the DELETE request.
-      $.ajax({
-        type: "DELETE",
-        url: "/api/hamburgers/" + id
-      }).then(location.reload());
-    });
+    });     
+    
 });
