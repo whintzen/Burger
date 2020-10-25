@@ -66,5 +66,7 @@ Open a terminal and run `node server.js`, this will connect you to the MySQL dat
 
   Screencastify video:
 
+
+  ![Image of The Hamburger App](https://github.com/whintzen/burger/blob/main/public/assets/image/BurgerApp_Screenshot.png)
    
-    ![Image of Burger App](https://github.com/whintzen/Burger/public/assets/images/BurgerApp_Screenshot.png)
+    
