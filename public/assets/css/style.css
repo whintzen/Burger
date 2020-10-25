@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: lavender ;
+  background-color: lightpink ;
   font-family: 'Muli', sans-serif;
   font-size: 14px;
 }
@@ -44,7 +44,10 @@ hr {
 
 .form-control {
   font-size: 14px;
-  color: blue;
+  color:blue;
+  background-color: lightgray;
+  border-radius: 5px;  
+
 }
 
 .btn {
