@@ -3,10 +3,10 @@
 Node Express Handlebars
 A burger App with MySQL, Node, Express, Handlebars and an ORM. Uses Node and MySQL to query and route data in the app, and Handlebars to generate HTML.
 
-# Concept
+## Concept
 Eat-Da-Burger! is a restaurant app that lets users input the names of hamburgers they'd like to eat. Whenever a user submits a hamburger's name, the app will display the hamburger on the left side of the page, under "Hamburgers Available", these are waiting to be devoured. Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.  The app will store every burger in a database, whether devoured or not.
 
-# User Story
+## User Story
 As a restuarant business owner
 I want to be able to allow users to input the names of burgers they especially like, and make those choices available 
 So that a user can select what burger they want to eat. 
@@ -50,7 +50,7 @@ Open a terminal and run `node server.js`, this will connect you to the MySQL dat
 
   Regardless of whether a hamburger is added or devoured, all hamburger information remains in the database.    
 
-# Tools:
+## Tools:
  * Node
  * Express
  * Handlebars
@@ -60,11 +60,11 @@ Open a terminal and run `node server.js`, this will connect you to the MySQL dat
  * Package json
  * MySQL WorkBench - in order to load and store the Hamburger data to the database
  * CSS 
+ 
+## Links:
+  Github Repository: https://github.com/whintzen/Burger
+
+  Screencastify video:
+
    
-# Links:
-    GitHub Repository: https://github.com/whintzen/Burger
-    
-    Screencastify video: 
-    https://drive.google.com/file/d/16jBn-hIE4odr2f1qco4GwBjGYVXXv5zV/view  
-    
-    
+    ![Image of Burger App](https://github.com/whintzen/Burger/public/assets/images/BurgerApp_Screenshot.png)
