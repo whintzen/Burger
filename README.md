@@ -11,24 +11,18 @@ As a restuarant business owner
 I want to be able to allow users to input the names of burgers they especially like, and make those choices available 
 So that a user can select what burger they want to eat. 
 
-## Instructions
-Design a Hamburger database schema containing a Hamburgers table:
-   * Create the `hamburgers_db`.
-   * Switch to or use the `hamburgers_db`.
+## Set up Instructions 
+* Design a Hamburger database schema containing a Hamburgers table:
+   * Create the `hamburger_db`.
+   * Switch to or use the `hamburger_db`.
    * Create a `hamburgers` table with these fields:
      * **id**: an auto incrementing int that serves as the primary key.
      * **burger_name**: a string.
      * **devoured**: a boolean.
 
-## How the Process Works
+* Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
 
-
-
-3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.
-
-4. Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
-
-5. Now you're going to run these SQL files.
+* Now you're going to run these SQL files.
 
    * Make sure you're in the `db` folder of your app.
 
@@ -40,8 +34,21 @@ Design a Hamburger database schema containing a Hamburgers table:
 
    * Close out of the MySQL command line tool: `exit`.
 
-# How the Process Works
+## How the Process Works
+Open a terminal and run `node server.js`, this will connect you to the MySQL database on server PORT 8080.  Open a browser and type `http://localhost:8080/` or `localhost:8080` and hit enter.  This will display the Hamburger App page with the Hamburgers that you added to the Hamburger database, when you ran the Schema.sql and Seeds.sql. 
+  * To Request a Hamburger:
+    In the `Request a Burger` input text box, enter the name of a hamburger that you would like to eat--  By clicking on the `Make my Burger` submit button, this will add the choice to the `Hamburgers Available` area.
     
+    * DataBase:
+      In the Hamburger database, Hamburgers table, the new hamburger will be added, and the Devoured field will contain a Zero (0) which means that the hamburger has a boolean value of `false` and that it was not Devoured as yet!!!. 
+
+  * To Devour a Hamburger:
+    To eat or Devour a hamburger of your choice, click on the `Devour It` submit button and the burger will move from `Hamburgers Available` to the `Hamburgers Devoured` area.
+
+    * DataBase:
+      In the Hamburger database, Hamburgers table, the Devoured hamburger's devoured field will be reassigned a new value. The Devoured field will now contain a One (1) which means that the hamburger has a boolean value of `true` and that it was Devoured!!!.
+
+  Regardless of whether a hamburger is added or devoured, all hamburger information remains in the database.    
 
 # Tools:
  * Node
