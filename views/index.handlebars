@@ -10,21 +10,23 @@
       </div>
     </center>
     <hr>
-    <div class="row">
-      <center>
+    <section>   
+      <div class="row">     
         <!-- Left side (Burgers Available).  This is what is stored in the Database
          and also what is added dynamically -->
-        <div class="col-md-6 float-left">
-            <h3 class="submitFont">Hamburgers Available</h3>
+         <div class="col-md-5 padding-left">
+            <h3 class="text-center submitFont">Hamburgers Available</h3>
             <div id="burgersAvailable">
 
               <!-- Dynamically Add User Burgers Here -->              
-              <form >
-                <div class="input-group">
+              <form>
+                <div class="input-group">                  
                     <ul>
                         {{#each hamburgers}}
                         {{#unless devoured}}
+
                         <li class="form-control">{{id}} - {{burger_name}}</li>
+
                         <span class="input-group-btn">
                         <button class="eatburger btn btn-success" id="eatbutton" data-id="{{this.id}}" 
                           data-newDevoured="{{devour}}" type="submit">Devour It!</button>
@@ -35,13 +37,11 @@
                 </div>
               </form>
             </div>
-        </div>
+        </div>        
 
-        <div class="col-md-6"></div> 
-
-        <!-- Right side (Burgers Devoured) -->
-        <div class="col-md-6 float-right">
-          <h3 class="submitFont">Burgers Devoured</h3>
+        <!-- Right side (Burgers Devoured) -->        
+        <div class="col-md-5 padding-left">
+          <h3 class="text-center submitFont">Burgers Devoured</h3>
           <div id="alreadyEaten">
 
             <!-- Dynamically Insert Devoured Burgers Here -->
@@ -59,9 +59,9 @@
               </div>
             </form>
           </div>
-        </div>         
-      </center>
-    </div>
+        </div>       
+      </div>
+    </section>   
     <br>
     <br>
         
