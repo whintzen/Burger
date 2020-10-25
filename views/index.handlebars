@@ -1,7 +1,6 @@
 <div class="container-fluid">  
     <center>
-      <div class="row">
-        {{!-- <img class="center" src="assets/images/burger.png" alt="Burger Img"> --}}
+      <div class="row">        
         <img class="center" src="assets/images/the-ultimate-hamburger.jpg" alt="Burger Img">
         <div class="jumbotron">
           <h1>Eat Da Burger!</h1>      
@@ -10,21 +9,16 @@
         </div>
       </div>
     </center>
-
-
-
+    <hr>
     <div class="row">
       <center>
         <!-- Left side (Burgers Available).  This is what is stored in the Database
          and also what is added dynamically -->
-        <div class="col-md-6">
+        <div class="col-md-6 float-left">
             <h3 class="submitFont">Hamburgers Available</h3>
             <div id="burgersAvailable">
 
-              <!-- Dynamically Add User Burgers Here -->
-            
-              {{!-- <form action="hamburger/eat/{{id}}" method="POST"> --}}
-              {{!-- <form action="hamburger/updateOne/{{id}}" method="PUT"> --}}
+              <!-- Dynamically Add User Burgers Here -->              
               <form >
                 <div class="input-group">
                     <ul>
@@ -46,7 +40,7 @@
         <div class="col-md-6"></div> 
 
         <!-- Right side (Burgers Devoured) -->
-        <div class="col-md-6">
+        <div class="col-md-6 float-right">
           <h3 class="submitFont">Burgers Devoured</h3>
           <div id="alreadyEaten">
 
@@ -68,35 +62,27 @@
         </div>         
       </center>
     </div>
+    <br>
+    <br>
         
         <!-- Input New Burgers Form -->
-      {{!-- <form action="hamburger/create" method="POST"> --}}
-      {{!-- <form class="create-form" action="hamburger/insertOne" method="POST">   --}}
-      <form class="create-form">
-        
-        <!-- Text Area Input -->
+        <!-- These new hamburgers will be deposited into the Hamburger Available section  -->
+    <form class="create-form">       
         <div class="row">
           <!-- Empty Div to help center textarea -->
-          <div class="col-md-3"></div> 
+            <div class="col-md-3"></div> 
 
                   <!-- Burger Input Box -->
-              <div class="form-group col-md-6">
-                <center><label for="newburger" class="submitFont">Request a new burger!</label></center>
-                {{!-- <textarea class="form-control" type="text" columns="6" rows="1" id="newburger required" value="" name="burger_name">
-                </textarea> --}}
-                 <textarea class="form-control" type="text" columns="6" rows="2" id="newburger" value="" name="burger_name">
-                </textarea>
-                
-              </div>
+            <div class="form-group col-md-6">
+                <center><label for="newburger" class="submitFont">Request a new burger!</label></center>                
+                 <textarea class="form-control" type="text" columns="6" rows="1" id="newburger" value="" name="burger_name">
+                </textarea>                
+             </div>
                           
-          <div class="col-md-3"></div> 
+            <div class="col-md-3"></div> 
         </div>          
         <!-- Submit Button -->
-        <center>
-          {{!-- <button type="submit" class="btn btn-danger" id="newburger" data-id="{{this.id}}" 
-                          data-newHamburger="{{this.burger_name}}">Make my Burger!
-            <span class="fa fa-thumbs-up"></span>
-          </button> --}}
+        <center>         
           <button type="submit" class="btn btn-danger" id="addburger">Make my Burger!
             <span class="fa fa-thumbs-up"></span>
           </button>
@@ -104,3 +90,9 @@
       </form>
       <br>
 </div>
+<footer >
+  <p><small>
+    &copy; 2020 Wendy Hintzen's Hamburger App.
+    </small></p>
+        
+</footer>

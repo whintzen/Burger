@@ -3,57 +3,79 @@
 }
 
 body {
-    /* background-color: #00ccff; */
-    background-color: royalblue ;
-    font-family: 'Muli', sans-serif;
-    font-size: 10px;
-  }
-  
-  /* .header {
-    font-size: 12px;
-  } */
-
-  .jumbotron h1{
-      color: #ff33cc;
+  background-color: lavender ;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+}
+ 
+.jumbotron h1{
+  color: #ff33cc;
        
-  }
+}
   
-  .jumbotron{
-      padding-top: 1%;
-      background-color:transparent !important;
-  }
+.jumbotron{
+  padding-top: 1%;
+  background-color:transparent !important;
+  padding-bottom: 30px;
+}
   
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 50%; */
-    margin-top: 5%;
-    max-width: 100%; 
-    height: 140px;
-    
-    /* width: 15%; */
-  }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;    
+  margin-top: 2%;
+  max-width: 100%; 
+  height: 140px; 
+   
+}
+hr {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* .float-left {
+  float: left;
+} */
+#burgersAvailable {
+  clear: both;
+  overflow: auto;    
+  text-align: center;
+  font-size: 16px;
+}
 
-  #burgersAvailable {
-    float: left;
-    text-align: center;
-    font-size: 1.3em;
-  }
+.form-control {
+  font-size: 14px;
+  color: blue;
+}
 
-  #alreadyEaten {
-    clear: both;
-    overflow: auto;
-    float: right;
-    text-align: center;
-    font-size: 1.3em;
-  }
+.btn {
+  font-size: 12px;
+}
+.float-right {
+  float: right;
+}
+#alreadyEaten {
+  clear: both;
+  overflow: auto;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+}
 
 
-  .submitFont{
-      color: greenyellow;
-  }
+.submitFont{
+  color: blueviolet;
+}
+/* Footer */
+footer {
+  position: relative;
+  width:100%;
+  height: 25px;    
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 85px;
+  font-size: 15px;
+  text-align: center;
+  clear: both;
+}
 
-  /* .form-control {
-    width: 90px;
-  } */
+ 
