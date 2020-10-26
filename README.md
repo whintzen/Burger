@@ -1,4 +1,4 @@
-# Burger
+# Burger  :hamburger: :fries:
 
 Node Express Handlebars
 A burger App with MySQL, Node, Express, Handlebars and an ORM. Uses Node and MySQL to query and route data in the app, and Handlebars to generate HTML.
@@ -62,16 +62,14 @@ Open a terminal and run `node server.js`, this will connect you to the MySQL dat
  * CSS 
  
 ## Links:
-  Github Repository: https://github.com/whintzen/Burger
-
-  Screencastify video:
-
-
-  ![Image of The Hamburger App](https://github.com/whintzen/Burger/blob/main/public/assets/images/BurgerApp_Screenshot.png)
+  * Github Repository: 
+    [Github](https://github.com/whintzen/Burger.git)
   
-   
-    
+  * Screencastify video: 
+    [Video](https://drive.google.com/file/d/1RWtuk18CH5-SxUaRS9qCbb2eEGsJiuE9/view?usp=sharing) 
 
+  * Portfolio Project: 
+    [Portfolio](https://whintzen.github.io/HW_Portfolio/index.html)
 
-
-    https://github.com/whintzen/Burger/blob/main/public/assets/images/BurgerApp_Screenshot.png
+  * ![Image of The Hamburger App](https://github.com/whintzen/Burger/blob/main/public/assets/images/BurgerApp_Screenshot.png)
+  
