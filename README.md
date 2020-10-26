@@ -37,13 +37,16 @@ So that a user can select what burger they want to eat.
 ## How the Process Works
 Open a terminal and run `node server.js`, this will connect you to the MySQL database on server PORT 8080.  Open a browser and type `http://localhost:8080/` or `localhost:8080` and hit enter.  This will display the Hamburger App page with the Hamburgers that you added to the Hamburger database, when you ran the Schema.sql and Seeds.sql. 
   * To Request a Hamburger:
-    In the `Request a Burger` input text box, enter the name of a hamburger that you would like to eat--  By clicking on the `Make my Burger` submit button, this will add the choice to the `Hamburgers Available` area.
+    * In the `Request a Burger` input text box, enter the name of a hamburger that you would like to eat--
+      By clicking on the `Make my Burger` submit button, this will add the choice to the `Hamburgers Available` area.
     
     * DataBase:
-      In the Hamburger database, Hamburgers table, the new hamburger will be added, and the Devoured field will contain a Zero (0) which means that the hamburger has a boolean value of `false` and that it was not Devoured as yet!!!. 
+      * In the Hamburger database, Hamburgers table, the new hamburger will be added, and the Devoured field
+        will contain a Zero (0) which means that the hamburger has a boolean value of `false` and that it was not Devoured as yet!!!. 
 
   * To Devour a Hamburger:
-    To eat or Devour a hamburger of your choice, click on the `Devour It` submit button and the burger will move from `Hamburgers Available` to the `Hamburgers Devoured` area.
+    * To eat or Devour a hamburger of your choice, click on the `Devour It` submit button and the burger will
+      move from `Hamburgers Available` to the `Hamburgers Devoured` area.
 
     * DataBase:
       In the Hamburger database, Hamburgers table, the Devoured hamburger's devoured field will be reassigned a new value. The Devoured field will now contain a One (1) which means that the hamburger has a boolean value of `true` and that it was Devoured!!!.
