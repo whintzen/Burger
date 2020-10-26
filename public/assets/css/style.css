@@ -8,7 +8,7 @@ body {
   font-size: 14px;
 }
  
-.jumbotron h1{
+.jumbotron h1 {
   color: #ff33cc;
        
 }
@@ -28,6 +28,7 @@ img {
   height: 140px; 
    
 }
+
 hr {
   width: 100%;
   margin-bottom: 30px;
@@ -41,7 +42,7 @@ hr {
 #burgersAvailable {
   text-align: center;
   font-size: 16px;  
-  /* margin-bottom: 10px; */
+  
 }
 
 .form-control {
@@ -51,22 +52,14 @@ hr {
   border-radius: 5px; 
 }
 
-/* .form-control li {
-  width: 300px;
-} */
-
 .btn {
   font-size: 12px;
 }
 
 #alreadyEaten {
-  /* clear: both;
-  overflow: auto; */
-  /* float: right; */
   text-align: center;
   font-size: 16px;
 }
-
 
 .submitFont{
   clear: both;
@@ -75,6 +68,7 @@ hr {
   margin-right: 25px;
   
 }
+
 /* Footer */
 footer {
   position: relative;
