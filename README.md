@@ -49,7 +49,8 @@ Open a terminal and run `node server.js`, this will connect you to the MySQL dat
       move from `Hamburgers Available` to the `Hamburgers Devoured` area.
 
     * DataBase:
-      In the Hamburger database, Hamburgers table, the Devoured hamburger's devoured field will be reassigned a new value. The Devoured field will now contain a One (1) which means that the hamburger has a boolean value of `true` and that it was Devoured!!!.
+      * In the Hamburger database, Hamburgers table, the Devoured hamburger's devoured field will be reassigned
+        a new value. The Devoured field will now contain a One (1) which means that the hamburger has a boolean value of `true` and that it was Devoured!!!.
 
   Regardless of whether a hamburger is added or devoured, all hamburger information remains in the database.    
 
