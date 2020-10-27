@@ -75,5 +75,6 @@ Open a terminal and run `node server.js`, this will connect you to the MySQL dat
   * Portfolio Project: 
     [Portfolio](https://whintzen.github.io/HW_Portfolio/index.html)
 
-  * ![Image of The Hamburger App](https://github.com/whintzen/Burger/blob/main/public/assets/images/BurgerApp_Screenshot.png)
+  * Hamburger App Image
+  ![Image of The Hamburger App](https://github.com/whintzen/Burger/blob/main/public/assets/images/BurgerApp_Screenshot.png)
   
